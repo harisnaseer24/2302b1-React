@@ -114,6 +114,14 @@ return( <ApiData  key={index} product={prod} />)
 <Route path='/' element={<Todo/>} />
 <Route path='/products' element={<Card/>} />
 <Route path='/login' element={<Form/>} />
+
+<Route path="/products" >
+<Route path="/products/all" element={<Card/>}/>
+<Route path="/products/create" element={<Form/>}/>
+
+</Route>
+
+
 {/* Not found */}
 <Route path='/*' element={<NotFound/>} />
 </Routes>
